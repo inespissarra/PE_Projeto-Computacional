@@ -1,6 +1,6 @@
 library(readxl)
 library(ggplot2)
-EsperancaVida <- read_excel("PE_Proj/Pergunta2/EsperancaVida.xlsx", range = "A9:CY69"); Anos = EsperancaVida$...1[43:60]
+EsperancaVida <- read_excel("EsperancaVida.xlsx", range = "A9:CY69"); Anos = EsperancaVida$...1[43:60]
 croacia_homem = EsperancaVida$`HR - Croácia...44`[43:60]; croacia_mulher = EsperancaVida$`HR - Croácia...78`[43:60]
 bulgaria_homem = EsperancaVida$`BG - Bulgária...42`[43:60]; bulgaria_mulher = EsperancaVida$`BG - Bulgária...76`[43:60]
 grecia_homem = EsperancaVida$`GR - Grécia...52`[43:60]; grecia_mulher = EsperancaVida$`GR - Grécia...86`[43:60]

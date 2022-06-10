@@ -1,5 +1,5 @@
 library(readxl); library(ggplot2)
-Utentes <- read_excel("PE_Proj/Pergunta4/Utentes.xlsx"); Colesterol = Utentes$Colesterol;
+Utentes <- read_excel("Utentes.xlsx"); Colesterol = Utentes$Colesterol;
 TAD = Utentes$TAD
 data = data.frame(TAD, Colesterol)
 print(ggplot(data, aes(x = TAD, y = Colesterol)) +

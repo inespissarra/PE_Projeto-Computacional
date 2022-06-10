@@ -1,7 +1,7 @@
 library(ggplot2)
 library(readxl)
 
-QualidadeARO3 <- read_excel("PE_Proj/Pergunta3/QualidadeARO3.xlsx"); Ihavo = as.numeric(QualidadeARO3$Ihavo);
+QualidadeARO3 <- read_excel("QualidadeARO3.xlsx"); Ihavo = as.numeric(QualidadeARO3$Ihavo);
 Paio_Pires = as.numeric(QualidadeARO3$`Paio-Pires`)
 data = data.frame(Ihavo, Paio_Pires)
 Estações = c(Ihavo, Paio_Pires)

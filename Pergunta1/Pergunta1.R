@@ -1,6 +1,6 @@
 library(readxl)
 library(ggplot2)
-ResiduosPerCapita <- read_excel("PE_Proj/Pergunta1/ResiduosPerCapita.xlsx", range = "A12:C43")
+ResiduosPerCapita <- read_excel("ResiduosPerCapita.xlsx", range = "A12:C43")
 dados_2004 = c(ResiduosPerCapita$`2004`[21],ResiduosPerCapita$`2004`[9],ResiduosPerCapita$`2004`[31]); dados_2018 = c(ResiduosPerCapita$`┴ 2018`[21],ResiduosPerCapita$`┴ 2018`[9],ResiduosPerCapita$`┴ 2018`[31])
 Países = c(ResiduosPerCapita$Anos[21], ResiduosPerCapita$Anos[9], ResiduosPerCapita$Anos[31]); Paises_data = data.frame(Países, dados_2004, dados_2018)
 

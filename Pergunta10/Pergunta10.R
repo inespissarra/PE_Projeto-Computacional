@@ -1,4 +1,5 @@
-library(ggplot2); set.seed(106)
+library(ggplot2); 
+set.seed(106)
 x = c() ; ma=c() ; maC=c();
 quantis = qnorm(1-0.05/2)
 for(i in 1:25){
